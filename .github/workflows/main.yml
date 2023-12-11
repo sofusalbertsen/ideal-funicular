@@ -1,0 +1,11 @@
+name: My first workflow
+on: [push, workflow_dispatch]
+
+jobs:
+  my-first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo hello
+      - name: run a script
+        run: echo hey again
+      - uses: actions/checkout@v4.1.1
