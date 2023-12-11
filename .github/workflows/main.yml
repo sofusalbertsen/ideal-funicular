@@ -20,4 +20,4 @@ jobs:
       - run: |
           echo "## :rocket: Summary" >> $GITHUB_STEP_SUMMARY
           echo "🎉 The job was triggered by event: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
-          echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ."
+          echo "🔎 The name of your branch is ${{ github.ref }}."
