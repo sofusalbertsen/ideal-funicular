@@ -18,7 +18,6 @@ jobs:
       - name: Dump env context
         run: echo '${{ toJSON(env) }}'
       - run: |
-          echo "## Summary" >> $GITHUB_STEP_SUMMARY
+          echo "## :rocket: Summary" >> $GITHUB_STEP_SUMMARY
           echo "🎉 The job was triggered by event: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
-          echo "And ran on a runner with the following info: ${{ toJSON(job) }}" >> $GITHUB_STEP_SUMMARY
           echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ."
